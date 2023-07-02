@@ -1,0 +1,428 @@
+@media (max-width: 1000px){
+    .header{    
+        gap: 0em;
+        display: flex;
+        justify-content: space-between;
+    }
+    .links{
+        font-size: 1em;
+        display: none;
+    }
+    .header.sticky{
+        display: none;
+    }
+    .logo {
+        padding-top: 1.5em;
+    }
+    .toggles{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggles:before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #0065fe;
+        z-index: 1;
+        box-shadow: 0 10px 0 #0065fe;
+        transition: 0.5s;
+    }
+    .toggles:after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #0065fe;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .firstSection {
+        min-height: 70vh;
+      
+    }
+
+    .mad .strok{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50vh);
+        padding: 50px 40px;
+        overflow: auto;
+        transition: 0.5s;
+        background: #132558fc;
+        flex-direction: column;
+        opacity: 0;
+        transform: translate(-100%);
+    }
+    .mad.active .strok{
+        display: inline-block;
+        opacity: 1;
+        top: 80px;
+        transform: translate(0);	
+    }
+    .mad .strok .land{
+        margin-bottom: 20px;
+    }
+    .mad .strok .land a{
+        margin: 5px 0px;
+        font-size: 10px;
+    }
+    .mad.active .toggles:before{
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+    .mad.active .toggles:after{
+        bottom: 14px;
+        transform: rotate(-45deg);
+    }
+    .sia{
+        min-height: 0vh;
+        max-width: 100%;
+    }
+    .please{
+        max-width: 100%;
+        border-top-left-radius: 0px;
+    }
+    .ask{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 20px 20px;
+    }
+    .ask .info{
+        height: 520px;
+    }
+    .ask .info h5{
+        margin-bottom: 30px;
+        color: #005b8d;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .form
+    {
+        padding-left: 0px;
+        padding: 0 20px;
+    }
+    .form .sif{
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .form .sif h5{
+        margin-bottom: 20px;
+        color: #005b8d;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .form form{
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .form form input[type="email"],
+    .form form input[type="text"]
+    {
+        font-size: 12px;
+    }
+    footer .sig{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 40px 40px;
+    }
+    .sii{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .sii .sij{
+        width: 300px;
+    }
+    .sii .sij ul li{
+        padding: 0 20px;
+    }
+    .sik{
+        width: 340px;
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+    .sil{
+        padding: 0 30px;
+        width: 340px;
+        margin-bottom: 30px;
+    }
+    .sim{
+        left: 0px;
+        padding: 0 30px;
+        width: 340px;
+    }
+    .repox{
+        padding-right: 0;
+    }
+    .repox .diff,.repo .diff{
+        padding: 50px 60px;
+    }
+    .repox .diff h1,.repo .diff h1 {
+        font-size: 25px;
+    }
+    .repox .diff p,.repo .diff p{
+        width: 300px;
+    }
+    .repox .diff .service,.repo .diff .service {
+        padding-left: 25px;
+    }
+    .asat {
+        padding: 20px 20px;
+    }
+    .block-head{
+        font-size: 16px;
+    }
+    .pas{
+        font-size: 16px;
+        padding: 20px;
+    }
+    .pax{
+        font-size: 1.2rem;
+    }
+    .btwn .content{
+        padding: 20px 40px;
+    }
+    .paxa{
+        padding: 30px;
+    }
+    .paxb{
+        flex-direction: column;
+    }
+    .lake{
+        margin-bottom: 80px;
+    }
+    .paxc{
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .paxc .paxd img{
+        width: 100%;
+    }
+    .paxe{
+        padding: 20px;
+        width: 280px;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+    .paxf{
+        font-size: 1.5rem;
+    }
+    .paxg{
+        font-size: 15px;
+    }
+    .areala{
+        padding: 20px 30px;
+        width: 100%;
+    }
+    .block-heads{
+        font-size: 16px;
+    }
+    .paxh{
+        font-size: 16px;
+    }
+    .paxi{
+        font-size: 14px;
+    }
+    .paxj{
+        padding: 0 20px;
+    }
+    .swell{
+        padding: 10px 20px;
+    }
+    .repo .diff p{
+        padding-right: 0;
+    }
+    .mages {
+        width: 20px;
+        height: 20px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .swirl,.swirls{
+        max-width: 40px;
+        height: 10px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .paxk{
+        font-size: 12px;
+    }
+    .mukasa{
+        padding: 40px 40px;
+        margin-top: 40px;
+    }
+    .laxa{
+        position: absolute;
+        left: 0%;
+        top: 40px;
+        width: 370px;
+        padding: 0 20px;
+    }
+    .laxb{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .laxc{
+        font-size: 16px;
+        width: 80%;
+    }
+    .laxd{
+        padding: 0px 30px;
+        padding-top: 40px;
+    }
+    .laxe{
+        width: 100%;
+        font-size: 22px;
+    }
+    .laxf{
+        font-size: 15px;
+        text-align: justify;
+        letter-spacing: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 0;
+    }
+    .radio{
+        flex-direction: column;
+    }
+    .radio img{
+        max-width: 370px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .laxg{
+        flex-direction: column-reverse;
+    }
+    .laxg img{
+        max-width: 100%;
+        border-top-left-radius: 0;
+    }
+    .laxh{
+        padding: 20px 30px;
+    }
+    .laxi{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .laxj{
+        font-size: 16px;
+    }
+    .buttonsi{
+        width: 100%;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+    .qra{
+        min-height: 0;
+    }
+    .qrb{
+        padding: 50px 20px;
+    }
+    .laxxa{
+        font-size: 16px;
+    }
+    .qrc{
+        font-size: 25px;
+    }
+    .qrd{
+        padding: 20px 20px;
+    }
+    .qre{
+        font-size: 16px;
+    }
+    .queens {
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .arepo {
+        padding: 10px 10px;
+    }
+    .arepo img{
+        max-width: 30px;
+        height: 30px;
+    }
+    .qrf{
+        height: 20px;
+        margin-top: 0;
+    }
+    .qrg{
+        margin-top: 0;
+        height: 20px;
+    }
+    .qrh{
+        height: 20px;
+        margin-top: 0;
+    }
+    .qrj{
+        height: 10px;
+        margin-top: 10;
+    }
+    .qrl{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .qrm,.qrms{
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .lakes,.lakerst{
+        margin-top: 30px;
+        width: 300px;
+        height: 170px;
+        border-radius: 5px;
+        padding: 10px 20px;
+        border: 2px solid rgba(0,0,12,0.08);
+    }
+    .lakers{
+        margin-top: 30px;
+        width: 300px;
+        height: 350px;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: 2px solid rgba(0,0,12,0.08);
+    }
+    .lakersa{
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        width: 300px;
+        height: 400px;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: 2px solid rgba(0,0,12,0.08);
+    }
+    .halad{
+        min-width: 100%;
+        width: 100%;
+        height: 150px;
+    }
+    .lore{
+        min-height: 130px;
+    }
+    .halad:before{
+        display: none;
+    }
+    .fitbgs{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .dive{
+        height:170px;
+    }
+    .dives{
+        height: 140px;
+    }
+}

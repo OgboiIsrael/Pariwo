@@ -1,0 +1,756 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+/*Element/Tag Styles*/
+body {
+  color: #141414;
+}
+
+a {
+  text-decoration: none;
+  height: 1.38em;
+}
+
+a img {
+  padding-left: 0.5em;
+}
+
+/*Classes Styles in Website*/
+
+/*General Class Styles*/
+
+.changeColor {
+  color: #005ae2;
+}
+
+/*Header Style Begin*/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5em 2em;
+  gap: 10em;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  transition: 0.5s;
+  z-index: 50;
+  position: absolute;
+}
+
+.header.sticky {
+  position: fixed;
+  background: #fff;
+}
+
+.toggles {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1em;
+  gap: 1em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.logoImage {
+  height: 1.5em;
+  width: 1.5em;
+  left: 0.5em;
+  top: 0.5em;
+  border-radius: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.logoImage2 {
+  height: 1.5em;
+  width: 0px;
+  left: 2.5em;
+  top: 0.5em;
+  border-radius: 0px;
+  background: #0065fe;
+  border: 2px solid #0065fe;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.logoName {
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: "Gilroy-Bold";
+  font-size: 1.5em;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  color: #0065fe;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: #0065fe;
+  font-family: Gilroy-Medium;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+/*Header Style Ends*/
+
+/*First Section - Begin*/
+
+.firstSection {
+  position: relative;
+  background-image: url(images/Ikoyi-H1.webp);
+  min-height: 95vh;
+  max-width: 100%;
+  background-size: cover;
+  transition: 1s ease-in-out;
+}
+
+/*Page Info Style Begins*/
+
+.pageInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0em 7em;
+  gap: 2em;
+}
+
+.info {
+  position: absolute;
+  top: 0.7em;
+  display: flex;
+  gap: 0.2em;
+  font-family: "Gilroy-Medium";
+  font-weight: 550;
+  font-size: 5em;
+  align-items: left;
+  line-height: 6em;
+  color: #141414;
+}
+
+.info2 {
+  position: absolute;
+  top: 4.2em;
+  display: flex;
+  gap: 0.2em;
+  font-family: "Gilroy-Medium";
+  font-weight: 550;
+  font-size: 5em;
+  align-items: left;
+  line-height: 1em;
+  color: #141414;
+}
+
+.joinUs {
+  position: relative;
+  top: 30em;
+}
+
+/*Page Info Style Begins*/
+
+/*Mid Page Style Begins*/
+span .active {
+  color: #0065fe;
+}
+
+.uaButton {
+  padding: 1.25em 3.75em;
+  gap: 0.63em;
+  border: none;
+  background: #fe5d00;
+  border-radius: 10px;
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.uaButton:hover {
+  font-size: 1em;
+  color: #fe5d00;
+  top: 2em;
+  background-color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0.3em 0.3em rgba(0, 0, 0, 0.07);
+}
+
+.vector {
+  position: absolute;
+  left: calc(50% - 833px / 2 + 65.5px);
+  top: 35em;
+  background-color: none;
+  opacity: 0.4;
+  z-index: 4;
+}
+
+/*End*/
+
+/*Second Section - Begin*/
+
+.secondSection {
+  position: relative;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 125vh;
+}
+
+.keyData {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 7em;
+  gap: 5em;
+  width: 100%;
+  position: absolute;
+  left: calc(50% - 100% / 2);
+  background: #f9fbfd;
+}
+
+.subjectTitle {
+  font-family: "Gilroy-Bold";
+  font-size: 2.5em;
+  line-height: 1.2em;
+  color: #141414;
+}
+
+.impSummary {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
+.impCat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 25em;
+  gap: 5em;
+}
+
+.impStatement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7em;
+}
+
+.bigText {
+  font-family: "Gilroy-Medium";
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 1.9em;
+  color: #141414;
+}
+
+.smallText {
+  font-family: "Gilroy-Medium";
+  font-size: 1em;
+  line-height: 1.35em;
+  color: #141414;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 6.25em;
+  position: relative;
+  top: 21em;
+  padding-bottom: 4em;
+  gap: 6em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.cTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.ctWord {
+  font-family: "Gilroy-Bold";
+  font-size: 2.5em;
+  line-height: 2em;
+  color: #141414;
+}
+
+.cSummary {
+  width: 23em;
+  font-family: "Gilroy-Medium";
+  font-size: 1em;
+  line-height: 1.75em;
+  color: #141414;
+}
+
+.bigContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4em;
+}
+
+.mContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.75em;
+}
+
+.smallContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5em;
+}
+
+.bdyHead {
+  font-family: "Gilroy-Medium";
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 1.75em;
+  color: #141414;
+}
+
+.bdyInfo {
+  width: 22em;
+  font-family: "Gilroy-Medium";
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #141414;
+}
+
+/*End*/
+
+/*Third Section - Begin*/
+
+.thirdSection {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 10em 0em;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  gap: 4em;
+}
+
+.containerTop {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.miniCT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.ctWords {
+  font-family: "Gilroy-Bold";
+  font-size: 2.3em;
+  color: #141414;
+}
+
+.ctbdyInfo {
+  text-align: center;
+  font-size: 1em;
+  font-family: Gilroy-Medium;
+  line-height: 1.5em;
+}
+
+.midContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6em;
+  padding-top: 2em;
+}
+
+.miniContainer {
+  border-radius: 0.7em;
+  border: 0.4px solid var(--primary-400, #005ae2);
+  background: var(--neutral-white, #fff);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  display: inline-flex;
+  padding: 2em 2em 2em 2em;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+}
+
+.splitter {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.miniPlaces {
+  width: 15em;
+  background-size: cover;
+}
+
+.textContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.htContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.mainHeader {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: Gilroy-Bold;
+  line-height: 1em;
+}
+
+.description {
+  text-align: left;
+  font-size: 1em;
+  font-family: Gilroy-Medium;
+  line-height: 2em;
+}
+
+.otherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+
+.listNum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.listItems {
+  text-align: center;
+  font-size: 0.9em;
+  font-family: Gilroy-Medium;
+  line-height: 1em;
+}
+
+.workButton {
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 1.5em 0;
+}
+
+.workButton:hover {
+  color: #fe5d00;
+}
+
+.ucButton {
+  display: flex;
+  padding: 1.5em 3em;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-300-base, #ffffff);
+  font-size: 1em;
+  font-family: Gilroy-Medium;
+  border-radius: 0.7em;
+  background: #111;
+  border: none;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ucButton:hover {
+  color: #111;
+  background-color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*End*/
+
+/*Fourth Section - Begin*/
+
+.sixthSection {
+  position: relative;
+  width: 100%;
+  background: var(
+    --linear-gradient,
+    linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%)
+  );
+}
+
+.fourthSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.thContainer1 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  position: relative;
+}
+
+.footImage1 {
+  width: 35%;
+}
+
+.footImage2 {
+  width: 25%;
+}
+
+.hlmainHeader1 {
+  display: flex;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  font-family: Gilroy-Bold;
+  line-height: 1.5em;
+}
+
+.uaButtons {
+  padding: 1.25em 3.75em;
+  gap: 0.63em;
+  border: 2px solid #fff;
+  background: #fe5d00;
+  border-radius: 10px;
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+  font-size: 1em;
+  color: #ffffff;
+  box-shadow: 0px 3px rgba(255, 255, 255, 0.3);
+}
+
+.uaButtons:hover {
+  font-size: 1em;
+  color: #fe5d00;
+  top: 2em;
+  background-color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
+}
+
+/*End*/
+
+/*Fifth Section - Begin*/
+
+.fifthSection {
+  position: relative;
+  background-image: url(images/ikoyi.jpg);
+  min-height: 95vh;
+  max-width: 100%;
+  background-size: cover;
+  transition: 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+.contactContainer {
+  padding: 10em 7em;
+  display: flex;
+  gap: 7em;
+  justify-content: center;
+}
+
+.infoContact {
+  padding: 3em 3em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1em;
+}
+
+.iconItems {
+  gap: 1em;
+  line-height: 1.5em;
+  padding: 1.5em 0;
+}
+
+.icon {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: left;
+  gap: 0.5em;
+  font-weight: 500;
+  font-family: Gilroy-medium;
+}
+
+.formDes {
+  display: flex;
+  flex-direction: column;
+  gap: 0em;
+}
+
+.optionsDes,
+.inputDes {
+  border-radius: 0.3em;
+  border: none;
+  padding: 0.5em 1em;
+}
+
+.inputDes::placeholder {
+  color: #111;
+}
+
+.messageDes {
+  border-radius: 0.3em;
+  border: none;
+  padding: 0.5em 1em;
+}
+
+.messageDes::placeholder {
+  color: #111;
+}
+
+.uaButton2 {
+  padding: 1em 2em;
+  gap: 0.63em;
+  border: none;
+  display: flex;
+  justify-content: center;
+  background: #fe5d00;
+  border-radius: 10px;
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.uaButton2:hover {
+  font-size: 1em;
+  color: #fe5d00;
+  top: 2em;
+  background-color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0.3em 0.3em rgba(0, 0, 0, 0.07);
+}
+
+/*End*/
+
+/*Footer - Begin*/
+
+.theFooter {
+  position: relative;
+  width: 100%;
+}
+
+.footer {
+  padding: 6em 8em;
+  display: flex;
+  flex-direction: row;
+  gap: 8em;
+}
+
+.ftLogo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1.5em;
+}
+
+.socials {
+  display: flex;
+  padding: 0px 0.5em;
+  align-items: flex-start;
+  gap: 1.3em;
+}
+
+.justPad {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 1.5em;
+  height: 0;
+  position: relative;
+}
+
+.ftcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+}
+
+.ftcontainer1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.myContainer {
+  display: flex;
+  padding: 0px 1.5em;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.contHeaders {
+  color: #005ae2;
+  font-size: 1em;
+  font-family: Gilroy-Bold;
+  line-height: 1.5em;
+}
+
+.ftItems {
+  color: var(--neutral-800, #112232);
+  font-size: 1em;
+  font-family: Gilroy-Medium;
+  line-height: 1.5em;
+  width: 10.5em;
+}
+
+.ftLetters {
+  display: flex;
+  padding: 0px 1em;
+  justify-content: right;
+  align-items: right;
+  gap: 0.5em;
+  position: relative;
+  top: 12em;
+  color: var(--neutral-800, #112232);
+  font-weight: 600;
+  font-size: 0.9em;
+  font-family: Gilroy-Medium;
+  line-height: 1.25em;
+}
+
+.changeColour {
+  color: #ffffff;
+}
+
+/*End*/
