@@ -110,6 +110,10 @@ a img {
   font-size: 1.5em;
 }
 
+.strok {
+  display: none;
+}
+
 /*Header Style Ends*/
 
 /*First Section - Begin*/
@@ -162,6 +166,10 @@ a img {
 .joinUs {
   position: relative;
   top: 30em;
+}
+
+.carousel {
+  width: 9em;
 }
 
 /*Page Info Style Begins*/
