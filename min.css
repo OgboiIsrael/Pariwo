@@ -127,7 +127,7 @@
     background: #ffffff;
     display: flex;
     flex-direction: column;
-    height: 230vh;
+    padding: 2em 0;
   }
 
   .keyData {
@@ -329,7 +329,7 @@
     background: #ffffff;
     display: flex;
     flex-direction: column;
-    height: 250vh;
+    padding: 2em 0;
   }
 }
 
@@ -360,7 +360,7 @@
     display: none;
   }
   .secondSection {
-    height: 245vh;
+    padding: 1em 0;
   }
   .keyData {
     padding: 4em 1em;
