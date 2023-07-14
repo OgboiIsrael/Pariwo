@@ -218,7 +218,6 @@ span .active {
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 3em 0;
 }
 
 .keyData {
@@ -229,7 +228,7 @@ span .active {
   padding: 4em 7em;
   gap: 5em;
   width: 100%;
-  position: absolute;
+  position: relative;
   left: calc(50% - 100% / 2);
   background: #f9fbfd;
 }
@@ -284,10 +283,8 @@ span .active {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px 6.25em;
+  padding: 8em 6.25em;
   position: relative;
-  top: 21em;
-  padding-bottom: 4em;
   gap: 6em;
 }
 
