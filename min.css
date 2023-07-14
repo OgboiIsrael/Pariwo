@@ -91,7 +91,7 @@
     flex-direction: column;
     align-items: left;
     padding: 0em 4em;
-    gap: 1em;
+    gap: 5em;
   }
 
   .info {
@@ -338,6 +338,9 @@
   .miniContainer {
     border: rgba(242, 242, 242, 0.536);
   }
+  .pageInfo {
+    gap: 4em;
+  }
 }
 
 @media (max-width: 550px) {
@@ -348,20 +351,19 @@
     max-width: 100%;
     background-size: cover;
     transition: 1s ease-in-out;
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
   .pageInfo {
     padding: 0em 2em;
+    gap: 4em;
   }
   .info {
-    top: 20em;
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .info2 {
-    top: 25;
-    font-size: 3em;
-  }
-  .joinUs {
-    top: 32em;
+    font-size: 2.5em;
   }
   .carousel {
     width: 0%;
