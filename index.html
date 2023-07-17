@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PARIWO | Safer Communities</title>
+        <meta charset = "utf-8" />
+        <title>Pariwo | Safer Communities</title>
+        <!-- add icon link -->
+        <link rel = "icon" href = "images/pariwoLogoMini.png" type = "image/x-icon">
         <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet">
@@ -10,26 +13,25 @@
     </head>
 
     <body>
+
         <header class="header" id="header">	
     	    <div class="toggles" onclick="toggle()"></div>
             <div class="links">
-                <span><a href="#info" class="active" onclick="toggle()">Home</a></span>
-                <span><a href="#about" onclick="toggle()">About Us</a></span>
+                <span><a href="#info" class="linked" onclick="toggle()">Home</a></span>
+                <span><a href="#about" class="linked" onclick="toggle()">About Us</a></span>
             </div>
             <div class="logo">
-                <img src="images/Vector.svg" class="logoImage">
-                <img src="images/line.svg" class="logoImage2">
-                <span class="logoName">PARIWO</span>
+                <img src="images/pariwoLogo.png" class="logoImage">
             </div>
             <div class="links">
-                <span><a href="#features" onclick="toggle()">Services <img src="images/arrowdown.svg"/></a></span>
-                <span><a href="#contactus" onclick="toggle()">Contact Us</a></span>
+                <span><a href="#features" class="linked" onclick="toggle()">Services <!--<img src="images/arrowdown.svg"/>--></a></span>
+                <span><a href="#contactus" class="linked" onclick="toggle()">Contact Us</a></span>
             </div>
             
             <div class="strok">
                 <span><a href="#info" class="active" onclick="toggle()">Home</a></span><br>
                 <span><a href="#about" onclick="toggle()">About Us</a></span><br>
-                <span><a href="#features" onclick="toggle()">Services <img src="images/arrowdown.svg"/></a></span><br>
+                <span><a href="#features" onclick="toggle()">Services</a></span><br>
                 <span><a href="#contactus" onclick="toggle()">Contact Us</a></span><br>
             </div>
         </header>
@@ -37,7 +39,8 @@
         <section class="firstSection" id="info">
             <div class="pageInfo">
                 <div>
-                    <div class="info">Making
+                    <div class="info">
+                        Creating
                             <span id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                                 <span class="carousel-inner">
                                   <span class="carousel-item active">
@@ -53,130 +56,129 @@
                             </span>
                         </span>
                     </div>
-                    <span class="info2">Environments.<img src="images/slant.svg" class="infoImage"></span>
+                    <span class="info2">Environments.<!--<img src="images/slant.svg" class="infoImage">--></span>
                 </div>
+               <span class="infos">
+                    Protecting The Vulnerable. “Be Part Of The Solution” to reduce crime.<br><span class="changeColor">- Pariwo Safety Alarm Systems</span>
+                </span>
                 <div class="joinUs">
                     <div>
                         <a class="uaButton" href="#features">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="vector">
-                <img src="images/art.svg" class="vectorImage">
+        </section>
+
+        <section class="secondSection" id="about">
+            <div class="benefits">               
+                <span class="smallText">
+                    One in three women in Africa would have experienced physical violence by age 15; this is probably higher in Nigeria.
+                    One in three women experience physical, sexual or intimate partner violence, are victims of trafficking or are subject to violent social norm.
+                    Women and girls are particularly impacted by safety or lack of it in most communities. Safety determines the capacity to move about freely, attend school or even use government services without fear in the morning, afternoon and at night. 
+                    We understand the need for cohesive collaboration within the community amongst individuals, neighborhood (policing) security, the police and business owners to help prevent crime and build a safer community where all can thrive with “rights to liberty and the pursuit of happiness”. 
+                </span>
             </div>
         </section>
 
         <section class="secondSection" id="about">
             <div class="keyData">
                 <div class="subject">
-                    <span class="subjectTitle">One Stop.<br>Four <span class="changeColor">Possibilities</span>.</span>
+                    <span class="subjectTitle">One Stop.<br>Four <span class="changeColor">Possibilities.</span></span>
                 </div>
                 <div class="impSummary">
                     <div class="impCat">
                         <div class="impStatement">
                             <span class="bigText">Alert</span>
-                            <span class="smallText">*Neighbours and Agencies</span>
+                            <span class="smallText">Neighbours and Agencies</span>
                         </div>
                         <div class="impStatement">
                             <span class="bigText">Report</span>
-                            <span class="smallText">*Appropraite agency notification</span>
+                            <span class="smallText">To appropraite agency</span>
                         </div>
                     </div>
                     <div class="impCat">
                         <div class="impStatement">
-                            <span class="bigText">Response</span>
-                            <span class="smallText">*Fast and reliable system</span>
+                            <span class="bigText">Respond</span>
+                            <span class="smallText">With fast and reliable networks</span>
                         </div>
                         <div class="impStatement">
                             <span class="bigText">Safety</span>
-                            <span class="smallText">*Assurance against danger</span>
+                            <span class="smallText">Vices and crimes deterrence</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="benefits">
-                <div class="container">
+                <div>
                     <div class="cTitle">
                         <img src="images/fadingLine.svg">
                         <span class="ctWord">About <span class="changeColor">Pariwo</span></span>
                     </div>
                     <p class="cSummary">
-                        Et ut sint elit aliquip magna laborum qui voluptate veniam commodo labore. Dolor laborum sit excepteur ea id elit culpa labore sint voluptate et laborum nostrud. Cillum consectetur nulla reprehenderit labore esse velit do commodo mollit ipsum reprehenderit amet. Excepteur consequat eiusmod commodo commodo sunt id Lorem deserunt velit ad nostrud mollit dolor excepteur. Ex est non deserunt voluptate.
+                        Pariwo is a safety technology company focusing on the latest safety-tech solutions to reduce crime and give peace of mind and equity in communities and cities at large.<br> Pariwo uses technology to prevent all forms of violence against women, girls, children and the vulnerable in Nigeria; Even in cases of intrusion or attack in the home; our technology will alert neighbours, friends, family and The Police of an impending/potential crime for rescue.<br> At the tap of a button from a Pariwo device - neighbours, neighbouthood security and law enforcement agents are alerted and called to your rescue immediately.
                     </p>
                 </div>
-                <div class="bigContainer">
-                    <div class="mContainer">
-                        <div class="smallContainer">
-                            <img src="images/item1.svg" class="bdyImg">
-                            <div>
-                                <h1 class="bdyHead">*Neighbourhood Alert</h1>
-                                <p class="bdyInfo">Qui irure sint laboris do consectetur. Anim commodo exercitation adipisicing eiusmod in mollit ea ad ut proident.</p>
-                            </div>
-                        </div>
-                        <div class="smallContainer">
-                            <img src="images/item2.svg" class="bdyImg">
-                            <div>
-                                <h1 class="bdyHead">*GPS Live Location</h1>
-                                <p class="bdyInfo">Qui irure sint laboris do consectetur. Anim commodo exercitation adipisicing eiusmod in mollit ea ad ut proident.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mContainer">
-                        <div class="smallContainer">
-                            <img src="images/item3.svg" class="bdyImg">
-                            <div>
-                                <h1 class="bdyHead">*Security Agent Alert</h1>
-                                <p class="bdyInfo">Qui irure sint laboris do consectetur. Anim commodo exercitation adipisicing eiusmod in mollit ea ad ut proident.</p>
-                            </div>
-                        </div>
-                        <div class="smallContainer">
-                            <img src="images/item4.svg" class="bdyImg">
-                            <div>
-                                <h1 class="bdyHead">*Sound WarnOff</h1>
-                                <p class="bdyInfo">Qui irure sint laboris do consectetur. Anim commodo exercitation adipisicing eiusmod in mollit ea ad ut proident.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <h1 class="ctWord">Our Objective</h1>
+                    <p class="bdyInfo">
+                        To work through Private and Public Partnerships (PPP) with our safety focused technology in vulnerable communities; deploying variety of community based safety solutions and services to tackle crime thereby creating flourishing SaferCommunities, and in turn breeds SaferCities in Nigeria.
+                        <br>For single women who live alone, female students, the elderly, children and vulnerable people in society;
+                        We partner Corporate entities, NGOs and Government who support the deployment of our safety devices by distributing to female staff at their work places, students at schools as part of their Corporate Social Responsibility (CRS) to reduce crime and give confidence to the vulnerable in society. 
+                        <br>Join our efforts, collaborate to prevent Gender Based Violence (GBV) and reduce crime against women, students and children through our safety-tech solutions and platform.
+                        <br>CRIME: Rape, Street Harassment, Domestic Abuse, Gender Based Violence (GBV), Home Intrusion, Home Invation, Anti-Social Behaviour (ASB), Theft, Burglary.
+                    </p>
                 </div>
             </div>
         </section>
 
         <section class="sixthSection">
             <div class="fourthSection">
-                <img src="images/footerImage.svg" class="footImage1">
                 <div class="thContainer1">
-                    <span class="hlmainHeader1">Improving Security with Technology</span>
-                    <button class="uaButtons"><span class="sbCaption">Get Started</span></button>
+                    <div>    
+                        <span class="hlmainHeader1">
+                            Alarms provide 50 times more protection for your home than no security.<br>
+                        </span>
+                        <span class="smallText" style="color: #ffff;">
+                            <br>Take basic steps to prevent being targeted for GBV, Harassment, Rape, Burglary and other crimes by opportunist. We all want safer communities – with limited antisocial behaviour. We want our communities to thrive, to enjoy the feeling of a free vibrant community where people move freely without fear. That is why Pariwo SaferCities exists: to make cities safer through proactive digital technology that connects neighbor to neignbour, linked secure connection to local neighbourhood watch and The Police through our Pariwo Safety Solutions.
+                            Should you want to connect and enhance community synergy securely in collaboration with the police to prevent further crime and make you feel safe at home, at school and at work, then MaiGaard can help.
+                            Securely collaborating and sharing digital information with trusted partners helps further empower communities of all sizes. Let’s find the perfect set-up, technologies and connection that gives you the peace of mind where your community remains actively protected.
+                            We understand the need for cohesive collaboration between community, neighborhood (policing) security, police and business operators to help prevent crime and build a safer community where all can thrive with “rights to liberty and the pursuit of happiness”.
+                            <br><br>
+                        </span>
+                    </div>
+                    <div class="joinUs">
+                        <div>
+                            <a class="uaButton" href="#features">Get Started</a>
+                        </div>
+                    </div>
                 </div>
-                <img src="images/footerImage2.svg" class="footImage2">
             </div>
         </section>
 
         <section class="thirdSection" id="features">
             <div class="containerTop">
-                <img src="images/fadingLine.svg">
                 <div class="miniCT">
                     <span class="ctWords">A <span class="changeColor">product perfect</span> for your needs.</span>
                     <p class="ctbdyInfo">
                         From catering for your personal, business, events, socials needs, you can be rest assured we have you in mind in our offerings.
+                    </p>
+                    <p class="ctbdyInfo">
+                        Project Pariwo is focused on safety within communities to prevent and reduce crime. Citizens can Be Free, Be Safe and Break-The-Silence Against crime with our security technology for #SaferCommunity, #SaferCity, and #SaferNigeria.
                     </p>
                 </div>
             </div>
             <div class="midContainer">
                 <div class="miniContainer">
                     <div class="splitter">
-                        <img class="miniPlaces" src="images/placeholder.ppm">
+                        <div class="ref"><img class="miniPlaces" src="images/placeholder.ppm"></div>
                         <div class="textContainer">
                             <div class="htContainer">
-                                <h1 class="mainHeader">Product 1</h1>
-                                <span class="description">Product description</span>
-                            </div>
-                            <div class="otherContainer">
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
+                                <h1 class="mainHeader">MAIGAARD Community Safety Alarm System</h1>
+                                <span class="description">
+                                    MaiGaard is a Home Security Alarm System. For everyone that cannot afford a private security guard; There is MAIGAARD Safety Alarm System by Pariwo Safety Technology to prevent crime, protect lives and properties.
+                                    Our solution empowers homeowners and vulnerable communities with safety technology that links Neighbour to Neighbour, Neighbour to The Police via sms and calls. At the instance of an emergency, neighbours (on the same street or within same community), family and friends are notified instantly via an sms alert of an impending incident. 
+                                    <br>A Tap on our MaiGaard device to activate neighbor to neighbors, neighbour to Police Alerts when crime occur. Neighbours lookout for each other to reduce crime and protect the community. We empower the most vulnerable communities with our safety devices
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -185,18 +187,15 @@
                 </div>
                 <div class="miniContainer">
                     <div class="splitter">
-                        <img class="miniPlaces" src="images/placeholder.ppm">
+                        <div class="ref"><img class="miniPlaces" src="images/placeholder.ppm"></div>
                         <div class="textContainer">
                             <div class="htContainer">
-                                <h1 class="mainHeader">Product 2</h1>
-                                <span class="description">Product description</span>
-                            </div>
-                            <div class="otherContainer">
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
+                                <h1 class="mainHeader">Pariwo Individual Safety Alarm</h1>
+                                <span class="description">
+                                    Pariwo is a security technology solution to reduce Gender Based Violence (GBV) and reduce crime in Nigeria; It is also meant to empower women, female students and the vulnerable in preventing RAPE, against bullying as well as prevent crime. Women are mostly vulnerable on their way to/from work and school in the Morning, Day or Night.
+                                    At the instance of an impending threat, individual will set-off the Pariwo safety alarm device which has a loud noise (140db) to deter attacker and attract attention.
+                                    <br> Self-defence tools like Pariwo, can deter an attacker and draw attention to a person in need, frightened, threatened or injured. Vulnerable people including women walking alone, children, older adults at risk of medical emergencies or falls and people who work at night.
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -207,18 +206,14 @@
             <div class="midContainer">
                 <div class="miniContainer">
                     <div class="splitter">
-                        <img class="miniPlaces" src="images/placeholder.ppm">
+                        <div class="ref"><img class="miniPlaces" src="images/placeholder.ppm"></div>
                         <div class="textContainer">
                             <div class="htContainer">
-                                <h1 class="mainHeader">Product 3</h1>
-                                <span class="description">Product description</span>
-                            </div>
-                            <div class="otherContainer">
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
+                                <h1 class="mainHeader">Mini GPRS Personal Alarm System</h1>
+                                <span class="description">
+                                    The Mini GPRS Personal Alarm System is a real time tracking solution for families. It has an in built sms or email notification. This is a mini personal tracker that will give you new level of awareness and confidence. It enables you to track real time location and it is designed for everyone including students, kids, people with special needs via our tracking platform. 
+                                    <br>It can be geo-fence to create no go areas, inbuilt panic button for emergency. Its makes for remote monitoring via our platform. 
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -227,18 +222,29 @@
                 </div>
                 <div class="miniContainer">
                     <div class="splitter">
-                        <img class="miniPlaces" src="images/placeholder.ppm">
+                        <div class="ref"><img class="miniPlaces" src="images/placeholder.ppm"></div>
                         <div class="textContainer">
                             <div class="htContainer">
-                                <h1 class="mainHeader">Product 4</h1>
-                                <span class="description">Product description</span>
+                                <h1 class="mainHeader">Safety App Panic Application: SaferCity App</h1>
+                                <span class="description">
+                                    Mobile Panic Application: It provide security and medical response with the latest technology that help link victim to family and friends and to Nigeria response network. It provide security and medical response with the latest technology that help link victim to family and friends and to Nigeria response network. It is a tools that gender base violence victims can use to chat to support network and social workers.
+                                    <br>This subscription based App can be downloaded from Google-Play Store.
+                                </span>
                             </div>
-                            <div class="otherContainer">
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
-                                <div class="listNum"><img src="images/blueCheck.svg" class="listImg"><span class="listItems">Product Features and advantages</span></div>
+                        </div>
+                    </div>
+                    <a href="youtube.com" class="workButton">See how it works</a>
+                    <a href="order.html" class="ucButton">Order Now</a>
+                </div>
+            </div>
+            <div class="midContainer">
+                <div class="miniContainer">
+                    <div class="splitter">
+                        <div class="ref"><img class="miniPlaces" src="images/placeholder.ppm"></div>
+                        <div class="textContainer">
+                            <div class="htContainer">
+                                <h1 class="mainHeader">In-house CCTV (content needed)</h1>
+                                <span class="description">Product description</span>
                             </div>
                         </div>
                     </div>
@@ -311,17 +317,9 @@
 
         <section class="theFooter">
             <div class="footer">
-                <div class="ftLogo">
+                <div class="ftLogo">        
                     <div class="logo">
-                        <img src="images/Vector.svg" class="logoImage">
-                        <img src="images/line.svg" class="logoImage2">
-                        <span class="logoName">PARIWO</span>
-                    </div>
-                    <div class="socials">
-                        <img src="images/twitter.svg">
-                        <img src="images/instagram.svg">
-                        <img src="images/linkedin.svg">
-                        <img src="images/facebook.svg">
+                        <img src="images/pariwoLogo.png" class="logoImage">
                     </div>
                 </div>
                 <div class="justPad">
@@ -335,7 +333,7 @@
                         <div class="myContainer">
                             <span class="contHeaders">Resources</span>
                             <div class="ftItems">
-                                Blog<br>Resource Library<br>Support<br>Trust Center<br>Mobile App
+                                Support<br>Trust Center<br>Mobile App
                             </div>
                         </div>
                     </div>
@@ -357,21 +355,12 @@
                         <div class="myContainer">
                             <span class="contHeaders">Products</span>
                             <div class="ftItems">
-                                Product 1<br>Product 2<br>Product 3<br>Product 4
-                            </div>
+                                MAIGAARD Community Safety Alarm System<br>Pariwo Individual Safety Alarm<br>Mini GPRS Personal Alarm System<br>Safety App Panic Application<br>In-house CCTV (content needed)                            </div>
                         </div>
-                        <div class="myContainer">
-                            <span class="contHeaders">Legal</span>
-                            <div class="ftItems">
-                                Privacy Policy<br>Cookie Policy<br>Terms of Service<br>Acceptable Use Policy<br>Code of Conduct
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="ftcontainer">
                         <div class="myContainer">
                             <span class="contHeaders">Company</span>
                             <div class="ftItems">
-                                About Pariwo<br>Careers<br>Partners<br>Contact
+                                About Pariwo<br>Partners<br>Contact
                             </div>
                         </div>
                     </div>
@@ -392,7 +381,7 @@
         <script type="text/javascript">
             window.addEventListener("scroll", function(){
                 var header = document.querySelector("header");
-                header.classList.toggle("sticky",window.scrollY > 80);
+                header.classList.toggle("sticky",window.scrollY > 100);
             })
         </script>
 
@@ -403,7 +392,7 @@
             }
 
             $('.carousel').carousel({
-                interval: 3000,
+                interval: 5000,
             })
 
             $('#myCarousel').on('slide.bs.carousel', function () {

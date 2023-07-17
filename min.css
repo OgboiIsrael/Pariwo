@@ -1,6 +1,6 @@
 @media (max-width: 1000px) {
   .header {
-    gap: 0em;
+    padding: 2em 3em;
     display: flex;
     justify-content: space-between;
   }
@@ -11,7 +11,7 @@
     display: none;
   }
   .logo {
-    padding-top: 1.5em;
+    padding-top: 0em;
   }
   .toggles {
     display: block;
@@ -26,9 +26,9 @@
     top: 4px;
     width: 100%;
     height: 2px;
-    background: #0065fe;
+    background: #00ccff;
     z-index: 1;
-    box-shadow: 0 10px 0 #0065fe;
+    box-shadow: 0 10px 0 #00ccff;
     transition: 0.5s;
   }
   .toggles:after {
@@ -37,7 +37,7 @@
     bottom: 4px;
     width: 100%;
     height: 2px;
-    background: #0065fe;
+    background: #00ccff;
     z-index: 1;
     transition: 0.5s;
   }
@@ -51,11 +51,12 @@
     transition: 0.5s;
     background: rgba(255, 255, 255, 1);
     flex-direction: column;
-    top: 6em;
+    top: 7em;
   }
-  .strok span {
+  .strok a {
     font-size: 1.2em;
     font-weight: 600;
+    color: #00ccff;
   }
   .header.active .strok {
     display: flex;
@@ -82,6 +83,7 @@
 
   .firstSection {
     min-height: 90vh;
+    padding: 5em 6em;
   }
 
   /*Page Info Style Begins*/
@@ -90,7 +92,6 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 0em 4em;
     gap: 5em;
   }
 
@@ -131,12 +132,14 @@
     flex-direction: column;
     padding: 0;
     height: 100%;
+    border: none;
   }
 
   .keyData {
     flex-direction: column;
     padding: 4em 2em;
     position: relative;
+    border: none;
   }
 
   .subjectTitle {
@@ -212,7 +215,7 @@
   /*Third Section - Begin*/
 
   .thirdSection {
-    padding: 8em 1em;
+    padding: 8em 5em;
     gap: 6em;
   }
 
@@ -241,6 +244,7 @@
       --linear-gradient,
       linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%)
     );
+    padding: 5em 3em;
   }
   .fourthSection {
     width: 100%;
@@ -280,7 +284,6 @@
 
   .footer {
     padding: 5em 5em;
-    flex-direction: column;
     gap: 5em;
   }
 
@@ -313,7 +316,7 @@
     gap: 0.5em;
     position: relative;
     top: 40em;
-    color: var(--neutral-800, #112232);
+    color: #fff;
     font-weight: 600;
     font-size: 0.9em;
     font-family: Gilroy-Medium;
@@ -328,6 +331,19 @@
 }
 
 @media (max-width: 700px) {
+  .firstSection {
+    padding: 7em 3em;
+  }
+  .info,
+  .info2 {
+    font-size: 3em;
+  }
+  .infos {
+    font-size: 1em;
+  }
+  .changeColor {
+    font-weight: 600;
+  }
   .secondSection {
     position: relative;
     background: #ffffff;
@@ -341,32 +357,39 @@
   .pageInfo {
     gap: 4em;
   }
+  .splitter {
+    flex-direction: column;
+  }
+  .splitter .ref {
+    display: flex;
+    justify-content: center;
+  }
+  .mainHeader {
+    font-size: 1.35em;
+  }
+  .description {
+    line-height: 1.5em;
+  }
+  .footer {
+    flex-direction: column;
+  }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 560px) {
   .firstSection {
-    position: relative;
-    background-image: url(images/Ikoyi-H1.webp);
+    padding: 5em 3em;
     height: 90%;
     max-width: 100%;
-    background-size: cover;
-    transition: 1s ease-in-out;
-    display: flex;
-    justify-content: left;
-    align-items: center;
   }
   .pageInfo {
-    padding: 0em 2em;
-    gap: 4em;
+    gap: 3em;
   }
+  .info2,
   .info {
     font-size: 2.5em;
   }
-  .info2 {
-    font-size: 2.5em;
-  }
   .carousel {
-    width: 0%;
+    width: 100%;
   }
   .vector {
     display: none;
@@ -377,9 +400,6 @@
   .keyData {
     padding: 7em 1em;
     position: relative;
-  }
-  .impCat {
-    flex-direction: column;
   }
   .impSummary {
     gap: 3em;
@@ -411,7 +431,7 @@
     font-size: 1.5em;
   }
   .thirdSection {
-    padding: 9em 2em;
+    padding: 9em 4em;
     gap: 6em;
   }
   .miniContainer {
@@ -427,9 +447,6 @@
   }
   .splitter {
     flex-direction: column;
-  }
-  .mainHeader {
-    font-size: 2em;
   }
   .hlmainHeader1 {
     font-size: 1.3em;
@@ -521,7 +538,7 @@
     gap: 0.5em;
     position: relative;
     top: 40em;
-    color: var(--neutral-800, #112232);
+    color: #fff;
     font-weight: 600;
     font-size: 0.9em;
     font-family: Gilroy-Medium;

@@ -3,6 +3,7 @@
 /*Element/Tag Styles*/
 body {
   color: #141414;
+  background-color: #111;
 }
 
 a {
@@ -18,8 +19,14 @@ a img {
 
 /*General Class Styles*/
 
+.changeColors {
+  color: #fe5d00;
+}
+
+.linked:hover,
 .changeColor {
-  color: #005ae2;
+  color: #00ccff;
+  text-decoration: none;
 }
 
 /*Header Style Begin*/
@@ -28,86 +35,47 @@ a img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1.5em 2em;
-  gap: 10em;
-  justify-content: center;
+  padding: 2em 0em;
+  justify-content: space-evenly;
   width: 100%;
   background-color: transparent;
-  transition: 0.5s;
+  transition: 0.7s ease-in;
   z-index: 50;
   position: absolute;
 }
 
 .header.sticky {
+  background-color: #111;
   position: fixed;
-  background: #fff;
+  padding: 1em 0em;
+}
+
+.header.sticky .logoImage {
+  width: 10em;
 }
 
 .toggles {
   display: none;
 }
 
-.logo {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 1em;
-  gap: 1em;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 .logoImage {
-  height: 1.5em;
-  width: 1.5em;
-  left: 0.5em;
-  top: 0.5em;
-  border-radius: 0px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.logoImage2 {
-  height: 1.5em;
-  width: 0px;
-  left: 2.5em;
-  top: 0.5em;
-  border-radius: 0px;
-  background: #0065fe;
-  border: 2px solid #0065fe;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.logoName {
-  letter-spacing: 0em;
-  text-align: left;
-  font-family: "Gilroy-Bold";
-  font-size: 1.5em;
-  line-height: 1em;
-  display: flex;
-  align-items: center;
-  color: #0065fe;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
+  width: 13em;
 }
 
 .links {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: center;
   gap: 5em;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  color: #0065fe;
+  width: 100%;
+  align-items: center;
+}
+
+.linked {
+  color: #fff;
   font-family: Gilroy-Medium;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .strok {
@@ -120,13 +88,15 @@ a img {
 
 .firstSection {
   position: relative;
-  background-image: url(images/Ikoyi-H1.webp);
+  background: url(images/Ikoyi-H2.jpg);
   min-height: 95vh;
-  max-width: 100%;
+  width: 100%;
   background-size: cover;
   transition: 1s ease-in-out;
   display: flex;
+  justify-content: left;
   align-items: center;
+  padding: 5em 7em;
 }
 
 /*Page Info Style Begins*/
@@ -135,30 +105,26 @@ a img {
   display: flex;
   justify-content: center;
   align-items: left;
-  padding: 0em 7em;
   gap: 3em;
   flex-direction: column;
 }
 
+.infos {
+  font-family: "Gilroy-Medium";
+  font-weight: 550;
+  font-size: 1.2em;
+  color: #f9fbfd;
+}
+
+.info2,
 .info {
   display: flex;
   gap: 0.2em;
   font-family: "Gilroy-Medium";
-  font-weight: 550;
-  font-size: 5em;
+  font-size: 4.2em;
+  letter-spacing: 4px;
   align-items: left;
-  color: #141414;
-}
-
-.info2 {
-  display: flex;
-  gap: 0.2em;
-  font-family: "Gilroy-Medium";
-  font-weight: 550;
-  font-size: 5em;
-  align-items: left;
-  line-height: 1em;
-  color: #141414;
+  color: #f9fbfd;
 }
 
 .carousel {
@@ -169,15 +135,15 @@ a img {
 
 /*Mid Page Style Begins*/
 span .active {
-  color: #0065fe;
+  color: #00ccff;
 }
 
 .uaButton {
-  padding: 1.25em 3.75em;
+  padding: 1.25em 3em;
   gap: 0.63em;
   border: none;
   background: #fe5d00;
-  border-radius: 10px;
+  border-radius: 2px;
   font-family: "Gilroy-Medium";
   font-weight: 500;
   font-size: 1em;
@@ -191,15 +157,6 @@ span .active {
   background-color: #ffffff;
   text-decoration: none;
   box-shadow: 0.3em 0.3em rgba(0, 0, 0, 0.07);
-}
-
-.vector {
-  position: absolute;
-  left: calc(50% - 833px / 2 + 65.5px);
-  top: 35em;
-  background-color: none;
-  opacity: 0.4;
-  z-index: 4;
 }
 
 /*End*/
@@ -247,7 +204,7 @@ span .active {
   justify-content: center;
   align-items: flex-start;
   width: 25em;
-  gap: 5em;
+  gap: 3em;
 }
 
 .impStatement {
@@ -259,10 +216,10 @@ span .active {
 
 .bigText {
   font-family: "Gilroy-Medium";
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 600;
-  line-height: 1.9em;
-  color: #141414;
+  line-height: 1.5em;
+  color: #00ccff;
 }
 
 .smallText {
@@ -278,7 +235,8 @@ span .active {
   align-items: flex-start;
   padding: 8em 6.25em;
   position: relative;
-  gap: 6em;
+  justify-content: space-between;
+  gap: 7em;
 }
 
 .container {
@@ -301,8 +259,8 @@ span .active {
   color: #141414;
 }
 
+.bdyInfo,
 .cSummary {
-  width: 23em;
   font-family: "Gilroy-Medium";
   font-size: 1em;
   line-height: 1.75em;
@@ -313,21 +271,6 @@ span .active {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4em;
-}
-
-.mContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 1.75em;
-}
-
-.smallContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2.5em;
 }
 
 .bdyHead {
@@ -335,14 +278,6 @@ span .active {
   font-weight: 600;
   font-size: 2em;
   line-height: 1.75em;
-  color: #141414;
-}
-
-.bdyInfo {
-  width: 22em;
-  font-family: "Gilroy-Medium";
-  font-size: 1em;
-  line-height: 1.5em;
   color: #141414;
 }
 
@@ -354,7 +289,7 @@ span .active {
   position: relative;
   width: 100%;
   display: flex;
-  padding: 10em 0em;
+  padding: 10em 5em;
   flex-direction: column;
   align-items: center;
   background: #fff;
@@ -389,15 +324,15 @@ span .active {
 
 .midContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 6em;
+  gap: 8em;
   padding-top: 2em;
 }
 
 .miniContainer {
   border-radius: 0.7em;
-  border: 0.4px solid var(--primary-400, #005ae2);
+  border: 0.4px solid rgba(167, 164, 164, 0.464);
   background: var(--neutral-white, #fff);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
   display: inline-flex;
@@ -435,7 +370,7 @@ span .active {
 
 .mainHeader {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-family: Gilroy-Bold;
   line-height: 1em;
 }
@@ -472,6 +407,7 @@ span .active {
   font-weight: 600;
   text-decoration: underline;
   padding: 1.5em 0;
+  color: #00ccff;
 }
 
 .workButton:hover {
@@ -486,7 +422,7 @@ span .active {
   color: var(--primary-300-base, #ffffff);
   font-size: 1em;
   font-family: Gilroy-Medium;
-  border-radius: 0.7em;
+  border-radius: 3px;
   background: #111;
   border: none;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
@@ -508,12 +444,13 @@ span .active {
   width: 100%;
   background: var(
     --linear-gradient,
-    linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%)
+    linear-gradient(180deg, #000000 99.99%, rgb(0, 0, 0) 100%)
   );
 }
 
 .fourthSection {
   width: 100%;
+  padding: 5em 7em;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -543,28 +480,6 @@ span .active {
   font-size: 2em;
   font-family: Gilroy-Bold;
   line-height: 1.5em;
-}
-
-.uaButtons {
-  padding: 1.25em 3.75em;
-  gap: 0.63em;
-  border: 2px solid #fff;
-  background: #fe5d00;
-  border-radius: 10px;
-  font-family: "Gilroy-Medium";
-  font-weight: 500;
-  font-size: 1em;
-  color: #ffffff;
-  box-shadow: 0px 3px rgba(255, 255, 255, 0.3);
-}
-
-.uaButtons:hover {
-  font-size: 1em;
-  color: #fe5d00;
-  top: 2em;
-  background-color: #ffffff;
-  text-decoration: none;
-  box-shadow: 0px 2px rgba(255, 255, 255, 0.5);
 }
 
 /*End*/
@@ -644,7 +559,7 @@ span .active {
   display: flex;
   justify-content: center;
   background: #fe5d00;
-  border-radius: 10px;
+  border-radius: 2px;
   font-family: "Gilroy-Medium";
   font-weight: 500;
   font-size: 1em;
@@ -670,7 +585,7 @@ span .active {
 }
 
 .footer {
-  padding: 6em 8em;
+  padding: 8em 8em;
   display: flex;
   flex-direction: row;
   gap: 8em;
@@ -678,16 +593,7 @@ span .active {
 
 .ftLogo {
   display: flex;
-  flex-direction: column;
-  position: relative;
   gap: 1.5em;
-}
-
-.socials {
-  display: flex;
-  padding: 0px 0.5em;
-  align-items: flex-start;
-  gap: 1.3em;
 }
 
 .justPad {
@@ -706,7 +612,7 @@ span .active {
 
 .ftcontainer1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2em;
 }
 
@@ -718,14 +624,14 @@ span .active {
 }
 
 .contHeaders {
-  color: #005ae2;
+  color: #00ccff;
   font-size: 1em;
   font-family: Gilroy-Bold;
   line-height: 1.5em;
 }
 
 .ftItems {
-  color: var(--neutral-800, #112232);
+  color: #fff;
   font-size: 1em;
   font-family: Gilroy-Medium;
   line-height: 1.5em;
@@ -740,7 +646,7 @@ span .active {
   gap: 0.5em;
   position: relative;
   top: 12em;
-  color: var(--neutral-800, #112232);
+  color: #00ccff;
   font-weight: 600;
   font-size: 0.9em;
   font-family: Gilroy-Medium;
