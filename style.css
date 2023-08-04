@@ -35,8 +35,9 @@ a img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 2em 0em;
-  justify-content: space-evenly;
+  padding: 2em 1em;
+  justify-content: center;
+  gap: 8em;
   width: 100%;
   background-color: transparent;
   transition: 0.7s ease-in;
@@ -51,7 +52,7 @@ a img {
 }
 
 .header.sticky .logoImage {
-  width: 10em;
+  width: 13em;
 }
 
 .toggles {
@@ -59,14 +60,13 @@ a img {
 }
 
 .logoImage {
-  width: 13em;
+  width: 15em;
 }
 
 .links {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 5em;
+  justify-content: space-evenly;
   width: 100%;
   align-items: center;
 }
@@ -76,6 +76,12 @@ a img {
   font-family: Gilroy-Medium;
   font-weight: 500;
   font-size: 1.2em;
+  letter-spacing: 0.09em;
+}
+
+.linked:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .strok {
@@ -163,11 +169,44 @@ span .active {
 
 /*Second Section - Begin*/
 
-.secondSection {
+#second, .secondSection {
   position: relative;
   background: #ffffff;
   display: flex;
   flex-direction: column;
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 2s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.tag1 {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 3s;
+}
+
+.tag1.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.tag2 {
+  opacity: 0;
+  transform: translate(0, -10vh);
+  transition: all 5s;
+}
+
+.tag2.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .keyData {
@@ -229,14 +268,73 @@ span .active {
   color: #141414;
 }
 
+.benefitSA {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10em 0;
+  position: relative;
+  justify-content: center;
+}
+
 .benefits {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 8em 6.25em;
+  padding: 15em 6.25em;
   position: relative;
-  justify-content: space-between;
-  gap: 7em;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5em 6.25em;
+  padding-bottom: 15em;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.mediapage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageOne img{
+  width: 30em;
+  border-radius: 1em;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.imageTwo {
+  transition: 1s ease-in;
+}
+
+.imageTwo img{
+  width: 10em;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  transition: 1s ease-out;
+}
+
+.imageSafe img {
+  width: 40em;
+  border-radius: 0em;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ftWord {
+  font-family: "Gilroy-Bold";
+  font-size: 1.5em;
+  color: #141414;
+  text-align: center;
 }
 
 .container {
@@ -289,7 +387,7 @@ span .active {
   position: relative;
   width: 100%;
   display: flex;
-  padding: 10em 5em;
+  padding: 10em 6.25em;
   flex-direction: column;
   align-items: center;
   background: #fff;
@@ -313,6 +411,7 @@ span .active {
   font-family: "Gilroy-Bold";
   font-size: 2.3em;
   color: #141414;
+  text-align: center;
 }
 
 .ctbdyInfo {
@@ -324,19 +423,16 @@ span .active {
 
 .midContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 8em;
   padding-top: 2em;
 }
 
 .miniContainer {
-  border-radius: 0.7em;
-  border: 0.4px solid rgba(167, 164, 164, 0.464);
   background: var(--neutral-white, #fff);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
   display: inline-flex;
-  padding: 2em 2em 2em 2em;
   flex-direction: column;
   align-items: center;
   gap: 1em;
@@ -345,8 +441,12 @@ span .active {
 
 .splitter {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   gap: 2em;
+  border: 0.4px solid rgba(167, 164, 164, 0.464);
+  padding: 2em 2em 2em 2em;
+  width: 32em;
 }
 
 .miniPlaces {
@@ -442,18 +542,26 @@ span .active {
 .sixthSection {
   position: relative;
   width: 100%;
-  background: var(
+  animation: fadeBackground 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeBackground {
+  from { background-color: #ffff; }
+  to { background-color: var(
     --linear-gradient,
     linear-gradient(180deg, #000000 99.99%, rgb(0, 0, 0) 100%)
-  );
+  ); }
 }
 
 .fourthSection {
   width: 100%;
-  padding: 5em 7em;
+  padding: 2em 3em;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
+  gap: 5em;
 }
 
 .thContainer1 {
@@ -483,6 +591,20 @@ span .active {
 }
 
 /*End*/
+
+.benefitA {
+  background-color: #fff;
+  padding: 0em 10em;
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  align-items: center;
+}
+
+.benefitA img {
+  width: 30em;
+}
 
 /*Fifth Section - Begin*/
 
