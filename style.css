@@ -6,6 +6,14 @@ body {
   background-color: #111;
 }
 
+.manImaged {
+  display: none;
+}
+
+.soto {
+  display: flex;
+}
+
 a {
   text-decoration: none;
   height: 1.38em;
@@ -118,7 +126,7 @@ a img {
 .infos {
   font-family: "Gilroy-Medium";
   font-weight: 550;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #f9fbfd;
 }
 
@@ -127,7 +135,7 @@ a img {
   display: flex;
   gap: 0.2em;
   font-family: "Gilroy-Medium";
-  font-size: 4.2em;
+  font-size: 5em;
   letter-spacing: 4px;
   align-items: left;
   color: #f9fbfd;
@@ -229,11 +237,21 @@ span .active {
   color: #141414;
 }
 
+.subjectTitleA {
+  font-family: "Gilroy-Bold";
+  font-size: 2em;
+  line-height: 1.2em;
+  color: #fff;
+}
+
+.milk {
+  display: none;
+}
+
 .impSummary {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
   gap: 2em;
 }
 
@@ -272,9 +290,39 @@ span .active {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 10em 0;
+  padding: 6em 6em;
   position: relative;
   justify-content: center;
+}
+
+.benefitSB {
+  padding: 5em 20em;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.imageback {
+  background-image: url(images/flafofnig.png);
+  background-size: cover;
+}
+
+.imageFront {
+  background-color: #000000ab;
+  padding: 6em 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+}
+
+.dix {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .benefits {
@@ -328,6 +376,20 @@ span .active {
   width: 40em;
   border-radius: 0em;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ftWordA {
+  font-family: "Gilroy-Bold";
+  font-size: 1.5em;
+  color: #141414;
+  text-align: center;
+}
+
+.ftWordB {
+  font-family: "Gilroy-Medium";
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: #fff;
 }
 
 .ftWord {
@@ -707,29 +769,38 @@ span .active {
 }
 
 .footer {
-  padding: 8em 8em;
+  padding: 4em 5em;
+  padding-top: 6em;
   display: flex;
   flex-direction: row;
-  gap: 8em;
+  justify-content: space-between;
 }
 
 .ftLogo {
   display: flex;
+  flex-direction: column;
   gap: 1.5em;
 }
 
+.ftItemA {
+  color: #fff;
+  font-size: 1em;
+  font-family: Gilroy-Medium;
+  line-height: 1.2em;
+  width: 15em;
+}
+
 .justPad {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 1.5em;
-  height: 0;
+  display: flex;
+  justify-content: space-between;
   position: relative;
 }
 
 .ftcontainer {
   display: flex;
   flex-direction: column;
-  gap: 3.5em;
+  gap: 4em;
+  align-items: left;
 }
 
 .ftcontainer1 {
@@ -756,23 +827,31 @@ span .active {
   color: #fff;
   font-size: 1em;
   font-family: Gilroy-Medium;
-  line-height: 1.5em;
-  width: 10.5em;
+  line-height: 1.2em;
 }
 
 .ftLetters {
   display: flex;
-  padding: 0px 1em;
-  justify-content: right;
-  align-items: right;
+  justify-content: center;
+  align-items: center;
   gap: 0.5em;
   position: relative;
-  top: 12em;
   color: #00ccff;
-  font-weight: 600;
   font-size: 0.9em;
   font-family: Gilroy-Medium;
   line-height: 1.25em;
+}
+
+.manImage {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+}
+
+.splinter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .changeColour {

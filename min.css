@@ -1,3 +1,97 @@
+@media (max-width: 1200px) {
+  .header {
+    gap: 4em;
+    padding: 2em 0em;
+  }
+  .linked {
+    font-size: 1.1em;
+  }
+
+  .benefitSB {
+    padding: 5em 15em;
+  }
+  .imageFront {
+    padding: 6em 3em;
+  }
+  .keyData {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .benefits {
+    padding: 8em 10em;
+    flex-direction: column-reverse;
+  }
+  .benefit {
+    flex-direction: column;
+    padding: 3em 10em;
+    padding-bottom: 8em;
+  }
+  .fourthSection {
+    gap: 3em;
+    padding: 2em 1em;
+  }
+  .imageSafe img {
+    width: 25em;
+  }
+  .hlmainHeader1 {
+    font-size: 1.7em;
+    line-height: normal;
+  }
+  .smallText {
+    line-height: normal;
+  }
+  .thContainer1 {
+    gap: 1em;
+  }
+  .uaButton {
+    padding: 1em 2.5em;
+  }
+  .thirdSection {
+    padding: 8em 5em;
+  }
+  .midContainer {
+    gap: 4em;
+  }
+  .benefitA {
+    padding: 0 6em;
+    gap: 4em;
+  }
+  .benefitA img {
+    width: 25em;
+  }
+  .ftWord {
+    font-size: 1.3em;
+  }
+  .ctWords {
+    font-size: 2em;
+  }
+  .description {
+    line-height: 1.5em;
+  }
+  .contactContainer {
+    padding: 8em 5em;
+    gap: 5em;
+  }
+  .footer {
+    padding: 4em 3em;
+  }
+  .ftItems,
+  .ftItemA {
+    font-size: 0.9em;
+  }
+  .manImage {
+    height: 12em;
+    width: 12em;
+  }
+  .info,
+  .info2 {
+    font-size: 4em;
+  }
+  .infos {
+    font-size: 1.2em;
+  }
+}
+
 @media (max-width: 1000px) {
   .header {
     padding: 2em 3em;
@@ -57,7 +151,8 @@
     top: 7em;
   }
   .strok a {
-    font-size: 1.2em;
+    font-size: 1em;
+    padding: 3em 0;
     font-weight: 600;
     color: #00ccff;
   }
@@ -66,8 +161,6 @@
     opacity: 1;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 50vh;
     transform: translate(0);
   }
   .header.active .toggles:before {
@@ -145,19 +238,11 @@
     border: none;
   }
 
-  .subjectTitle {
-    font-size: 2em;
-  }
-
   .impSummary {
-    flex-direction: column;
-    gap: 2em;
     width: 100%;
-    padding: 1em 3em;
   }
 
   .impCat {
-    gap: 3em;
     width: 100%;
   }
 
@@ -170,16 +255,6 @@
   .bigText {
     font-size: 1.5em;
     line-height: 1.6em;
-  }
-
-  .benefits {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    top: 0;
-    padding: 7em 6em;
-    padding-bottom: 5em;
-    gap: 4em;
   }
 
   .cSummary,
@@ -217,11 +292,6 @@
 
   /*Third Section - Begin*/
 
-  .thirdSection {
-    padding: 8em 5em;
-    gap: 6em;
-  }
-
   .ctWords {
     font-size: 2em;
   }
@@ -239,33 +309,15 @@
   /*End*/
 
   /*Fourth Section - Begin*/
-
-  .sixthSection {
-    position: relative;
-    width: 100%;
-    background: var(
-      --linear-gradient,
-      linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%)
-    );
-    padding: 5em 3em;
-  }
-  .fourthSection {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding: 3em 1em;
-  }
-  .thContainer1 {
-    justify-content: center;
-    gap: 2em;
-  }
   .footImage2,
   .footImage1 {
     display: none;
   }
   .hlmainHeader1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
+  }
+  .smallText {
+    font-size: 0.9em;
   }
   .uaButtons {
     padding: 1em 3.3em;
@@ -284,53 +336,35 @@
   /*End*/
 
   /*Footer - Begin*/
-
-  .footer {
-    padding: 5em 5em;
-    gap: 5em;
+  .splinter {
+    width: 12em;
   }
-
-  .ftLogo {
-    gap: 1em;
+  .ftItemA {
+    width: 15em;
   }
-
-  .justPad {
-    flex-direction: column;
+  .manImage {
+    height: 10em;
+    width: 10em;
   }
-
-  .ftcontainer {
-    flex-direction: row;
-  }
-
-  .ftcontainer1 {
-    flex-direction: row;
-    gap: 3.5em;
-  }
-
-  .myContainer {
-    width: 100%;
-  }
-
-  .ftLetters {
-    display: flex;
-    padding: 0px 1em;
-    justify-content: right;
-    align-items: right;
-    gap: 0.5em;
-    position: relative;
-    top: 40em;
-    color: #fff;
-    font-weight: 600;
-    font-size: 0.9em;
-    font-family: Gilroy-Medium;
-    line-height: 1.25em;
-  }
-
-  .changeColour {
-    color: #ffffff;
-  }
-
   /*End*/
+}
+
+@media (max-width: 800px) {
+  .benefitSB {
+    padding: 5em 8em;
+  }
+  .imageback {
+    background-size: contain;
+  }
+  .imageFront {
+    padding: 4em 2em;
+  }
+  .ftWordB {
+    font-size: 0.9em;
+  }
+  .dix {
+    gap: 2em;
+  }
 }
 
 @media (max-width: 700px) {
@@ -344,21 +378,41 @@
   .infos {
     font-size: 1em;
   }
-  .changeColor {
-    font-weight: 600;
+  .benefitSB {
+    padding: 5em 4em;
   }
-  .secondSection {
-    position: relative;
-    background: #ffffff;
-    display: flex;
+  .subjectTitle {
+    font-size: 2.4em;
+  }
+  .imageFront {
+    padding: 4em 4em;
+  }
+  .dix {
     flex-direction: column;
-    height: 100%;
   }
-  .miniContainer {
-    border: rgba(242, 242, 242, 0.536);
+  .benefits {
+    padding: 8em 3em;
   }
-  .pageInfo {
-    gap: 4em;
+  .benefit {
+    padding: 3em 3em;
+    padding-bottom: 5em;
+  }
+  .imageOne img {
+    width: 25em;
+  }
+  .imageTwo img {
+    width: 8em;
+  }
+  .ctWord {
+    font-size: 2em;
+  }
+  .fourthSection {
+    flex-direction: column;
+    padding: 0em 4em;
+    padding-bottom: 2em;
+  }
+  .imageSafe img {
+    width: 35em;
   }
   .splitter {
     flex-direction: column;
@@ -367,18 +421,118 @@
     display: flex;
     justify-content: center;
   }
+  .benefitA {
+    padding-top: 4em;
+    padding: 0em 3em;
+    gap: 2em;
+  }
+  .ftWord {
+    font-size: 1em;
+  }
+  .benefitA img {
+    width: 20em;
+  }
+  .ctWords {
+    font-size: 1.7em;
+  }
+  .icon {
+    font-size: 1em;
+    align-items: center;
+    font-family: Gilroy-Medium;
+  }
   .mainHeader {
     font-size: 1.35em;
   }
   .description {
     line-height: 1.5em;
   }
+  .manImage {
+    display: none;
+  }
+  .manImaged {
+    display: block;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 670px) {
+  .subjectTitle {
+    font-size: 2em;
+  }
+  .cSummary {
+    line-height: 1.5em;
+  }
+  .imageFront {
+    gap: 1em;
+  }
+  ul {
+    display: none;
+  }
+  .dix {
+    gap: 0em;
+  }
+  .keyData {
+    padding: 4em 4em;
+  }
+  .impSummary {
+    flex-direction: column;
+  }
   .footer {
     flex-direction: column;
+  }
+  .soto {
+    justify-content: space-between;
+    gap: 3em;
+  }
+  .soto1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+  }
+  .ftItemA {
+    width: 100%;
+  }
+  .manImaged {
+    display: block;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+  }
+  .ftcontainer {
+    flex-direction: row;
+  }
+  .myContainer {
+    padding: 2em 0;
+  }
+  .imageSafe img {
+    width: 25em;
+  }
+  .imageOne img {
+    width: 20em;
+  }
+  .imageTwo img {
+    width: 5em;
   }
 }
 
 @media (max-width: 560px) {
+  .imageSafe img {
+    width: 20em;
+  }
+  .info {
+    display: none;
+  }
+  .milk {
+    display: block;
+  }
+  .fourthSection {
+    padding: 0 3em;
+    padding-bottom: 3em;
+  }
+
   .firstSection {
     padding: 5em 3em;
     height: 90%;
@@ -397,18 +551,30 @@
   .vector {
     display: none;
   }
+  .imageFront,
+  .benefitSB {
+    padding: 3em 3em;
+  }
+  .subjectTitleA {
+    font-size: 1.7em;
+  }
   .secondSection {
     height: 100%;
   }
   .keyData {
-    padding: 7em 1em;
-    position: relative;
+    padding: 4em 3em;
+  }
+  .splitter {
+    width: 25em;
   }
   .impSummary {
     gap: 3em;
   }
   .impStatement {
     width: 100%;
+  }
+  .soto {
+    flex-direction: column;
   }
   .bigText {
     font-size: 1.2em;
@@ -422,10 +588,24 @@
     background-size: cover;
   }
   .ctWord {
-    font-size: 2em;
+    font-size: 1.6em;
   }
+  .mediapage {
+    flex-direction: column-reverse;
+  }
+  .imageOne img {
+    width: 18em;
+    border-radius: 0.4em;
+  }
+  .imageTwo img {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+  }
+  .bdyInfo,
   .cSummary {
-    font-size: 1em;
+    font-size: 0.9em;
+    padding-top: 2em;
   }
   .ctWords {
     font-size: 1.6em;
@@ -453,13 +633,6 @@
   }
   .hlmainHeader1 {
     font-size: 1.3em;
-    /*color: #fe5d00;*/
-    color: rgba(121, 116, 108, 0.942);
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .sixthSection {
-    display: none;
   }
   .uaButtons {
     display: none;
@@ -510,7 +683,7 @@
     font-size: 0.9em;
   }
   .footer {
-    padding: 6em 2em;
+    padding: 6em 3em;
     gap: 4em;
   }
   .ftLogo {
@@ -533,21 +706,61 @@
   .ftItems {
     font-size: 0.9em;
   }
-  .ftLetters {
-    display: flex;
-    padding: 0px 1em;
-    justify-content: right;
-    align-items: right;
-    gap: 0.5em;
-    position: relative;
-    top: 40em;
-    color: #fff;
-    font-weight: 600;
-    font-size: 0.9em;
-    font-family: Gilroy-Medium;
-    line-height: 1.25em;
-  }
   .changeColour {
     color: #ffffff;
   }
+  .smallText {
+    font-size: 0.7em;
+  }
+  .subjectTitle {
+    font-size: 1.7em;
+  }
+  .logoImage {
+    width: 10em;
+  }
+  .header {
+    padding: 2em 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .soto1 {
+    flex-direction: column;
+  }
+  .info,
+  .info2 {
+    font-size: 1.7em;
+  }
+  .impCat {
+    gap: 1em;
+  }
+  .benefitA img {
+    width: 15em;
+  }
+  .fourthSection {
+    padding: 0 3em;
+    padding-bottom: 3em;
+  }
+  .thirdSection {
+    padding: 4em 3em;
+  }
+  .splitter {
+    width: 18em;
+    padding: 1em 1em;
+  }
+  .mainHeader {
+    font-size: 1.2em;
+  }
+  .ctWords {
+    font-size: 1.4em;
+  }
+  .contactContainer {
+    padding: 4em 3em;
+    gap: 3em;
+  }
+  .imageSafe img,
+  .infoContact {
+    width: 18em;
+  }
+
 }
