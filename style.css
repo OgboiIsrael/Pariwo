@@ -3,7 +3,6 @@
 /*Element/Tag Styles*/
 body {
   color: #141414;
-  background-color: #111;
 }
 
 .manImaged {
@@ -779,6 +778,7 @@ span .active {
 .theFooter {
   position: relative;
   width: 100%;
+  background-color: #000000;
 }
 
 .footer {

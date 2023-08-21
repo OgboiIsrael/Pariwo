@@ -7,7 +7,9 @@
   .linked {
     font-size: 1.1em;
   }
-
+  .miniPlaces {
+    height: 18em;
+  }
   .seperate1 {
     flex-direction: column;
     gap: 2em;
@@ -98,11 +100,17 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
   .header {
     padding: 2em 3em;
     display: flex;
     justify-content: space-between;
+  }
+  .miniPlaces {
+    height: 15em;
+  }
+  .imageOne img {
+    width: 30em;
   }
   .links {
     display: none;
@@ -356,11 +364,27 @@
 }
 
 @media (max-width: 800px) {
+  
+  .benefits,
   .benefitSB {
-    padding: 5em 8em;
+    padding: 5em 6em;
   }
   .imageback {
     background-size: contain;
+  }
+  .splitter {
+    flex-direction: column;
+  }
+  .miniPlaces {
+    height: 20em;
+  }
+  .ref {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imageOne img {
+    width: 28em;
   }
   .imageFront {
     padding: 4em 2em;
@@ -411,6 +435,10 @@
   }
   .ctWord {
     font-size: 2em;
+  }
+  .bdyInfo,
+  .cSummary {
+    font-size: 1em;
   }
   .fourthSection {
     flex-direction: column;
@@ -524,6 +552,9 @@
 @media (max-width: 560px) {
   .imageSafe img {
     width: 20em;
+  }
+  .miniPlaces {
+    height: 17em;
   }
   .milk {
     display: block;
@@ -744,10 +775,6 @@
   .thirdSection {
     padding: 4em 3em;
   }
-  .splitter {
-    width: 18em;
-    padding: 1em 1em;
-  }
   .mainHeader {
     font-size: 1.2em;
   }
@@ -758,8 +785,49 @@
     padding: 4em 3em;
     gap: 3em;
   }
-  .imageSafe img,
-  .infoContact {
+  .imageSafe img {
+    width: 18em;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .soto1 {
+    flex-direction: column;
+  }
+  .info,
+  .info2 {
+    font-size: 1.7em;
+  }
+  .impCat {
+    gap: 1em;
+  }
+  .benefitA img {
+    width: 15em;
+  }
+  .fourthSection {
+    padding: 0 3em;
+    padding-bottom: 3em;
+  }
+  .thirdSection {
+    padding: 4em 3em;
+  }
+  .mainHeader {
+    font-size: 1.2em;
+  }
+  .ctWords {
+    font-size: 1.4em;
+  }
+  .contactContainer {
+    padding: 4em 2em;
+    gap: 3em;
+  }
+  .miniPlaces {
+    height: 14em;
+  }
+  .splitter,
+  .infoContact,
+  .imageSafe img {
     width: 18em;
   }
 
