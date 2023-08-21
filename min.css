@@ -2,9 +2,15 @@
   .header {
     gap: 4em;
     padding: 2em 0em;
+    background-color: transparent;
   }
   .linked {
     font-size: 1.1em;
+  }
+
+  .seperate1 {
+    flex-direction: column;
+    gap: 2em;
   }
 
   .benefitSB {
@@ -467,9 +473,6 @@
   .imageFront {
     gap: 1em;
   }
-  ul {
-    display: none;
-  }
   .dix {
     gap: 0em;
   }
@@ -521,9 +524,6 @@
 @media (max-width: 560px) {
   .imageSafe img {
     width: 20em;
-  }
-  .info {
-    display: none;
   }
   .milk {
     display: block;

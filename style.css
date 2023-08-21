@@ -47,7 +47,7 @@ a img {
   justify-content: center;
   gap: 6em;
   width: 100%;
-  background-color: transparent;
+  background-color: #111111b3;
   transition: 0.7s ease-in;
   z-index: 50;
   position: absolute;
@@ -110,7 +110,8 @@ a img {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 5em 7em;
+  padding: 5em 6em;
+  padding-top: 12em;
 }
 
 /*Page Info Style Begins*/
@@ -118,24 +119,37 @@ a img {
 .pageInfo {
   display: flex;
   justify-content: center;
+  width: 100%;
   align-items: left;
-  gap: 3em;
+  gap: 5em;
   flex-direction: column;
 }
 
 .infos {
   font-family: "Gilroy-Medium";
-  font-weight: 550;
-  font-size: 1.5em;
+  font-weight: 500;
+  font-size: 2em;
   color: #f9fbfd;
+}
+
+.seperate {
+  display: flex;
+  flex-direction: column;
+}
+
+.seperate1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: baseline;
 }
 
 .info2,
 .info {
   display: flex;
-  gap: 0.2em;
   font-family: "Gilroy-Medium";
   font-size: 5em;
+  line-height: normal;
   letter-spacing: 4px;
   align-items: left;
   color: #f9fbfd;
@@ -296,7 +310,7 @@ span .active {
 }
 
 .benefitSB {
-  padding: 5em 20em;
+  padding: 5em 15em;
   background-color: #fff;
   text-align: center;
   position: relative;
@@ -329,7 +343,8 @@ span .active {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 15em 6.25em;
+  padding: 6em 6.25em;
+  padding-top: 15em;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -340,8 +355,7 @@ span .active {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0em 6.25em;
-  padding-bottom: 15em;
+  padding: 6em 6.25em;
   position: relative;
   justify-content: left;
   align-items: center;
@@ -425,7 +439,7 @@ span .active {
 .bdyInfo,
 .cSummary {
   font-family: "Gilroy-Medium";
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.75em;
   color: #141414;
 }
@@ -488,7 +502,7 @@ span .active {
 
 .midContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 8em;
   padding-top: 2em;
@@ -506,16 +520,13 @@ span .active {
 
 .splitter {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 2em;
   border: 0.4px solid rgba(167, 164, 164, 0.464);
   padding: 2em 2em 2em 2em;
-  width: 32em;
 }
 
 .miniPlaces {
-  width: 15em;
+  height: 20em;
   background-size: cover;
 }
 
@@ -607,8 +618,7 @@ span .active {
 .sixthSection {
   position: relative;
   width: 100%;
-  animation: fadeBackground 1s;
-  animation-fill-mode: forwards;
+  background-color:#111;
 }
 
 @keyframes fadeBackground {
