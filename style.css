@@ -518,7 +518,7 @@ span .active {
   padding: 0 6.25em;
 }
 
-.splitter {
+.allIneed{
   display: flex;
   gap: 2em;
   border: 0.4px solid rgba(167, 164, 164, 0.464);
@@ -526,6 +526,7 @@ span .active {
   padding: 2em 2em 2em 2em;
 }
 
+.splitter,
 .splitterX {
   display: flex;
   gap: 2em;
