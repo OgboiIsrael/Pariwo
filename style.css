@@ -374,6 +374,8 @@ span .active {
   width: 35em;
   border-radius: 0.7em;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  float: right;
+  margin: 2em;
 }
 
 .imageTwo {
@@ -441,6 +443,7 @@ span .active {
   font-size: 1.4em;
   line-height: 1.75em;
   color: #141414;
+  text-align: justify;
 }
 
 .bigContainer {
@@ -465,11 +468,12 @@ span .active {
   position: relative;
   width: 100%;
   display: flex;
-  padding: 10em 0em;
+  padding-top: 10em;
+  padding-bottom: 5em;
   flex-direction: column;
   align-items: center;
   background: #fff;
-  gap: 4em;
+  gap: 0em;
 }
 
 .containerTop {
@@ -484,6 +488,7 @@ span .active {
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
+  padding-bottom: 9em;
 }
 
 .ctWords {
@@ -504,8 +509,7 @@ span .active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8em;
-  padding-top: 2em;
+  padding-top: 0em;
 }
 
 .miniContainer {
@@ -516,6 +520,13 @@ span .active {
   gap: 1em;
   position: relative;
   padding: 0 6.25em;
+}
+
+.refs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .allIneed{
@@ -536,6 +547,10 @@ span .active {
 .miniPlaces {
   height: 20em;
   background-size: cover;
+}
+
+.miniPlacesL {
+  height: 15em;
 }
 
 .textContainer {
