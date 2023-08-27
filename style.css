@@ -494,9 +494,9 @@ span .active {
 
 .ctbdyInfo {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-family: Gilroy-Medium;
-  line-height: 1.5em;
+  line-height: 1.75em;
 }
 
 .midContainer {
@@ -547,14 +547,14 @@ span .active {
   text-align: center;
   font-size: 1.5em;
   font-family: Gilroy-Bold;
-  line-height: 1em;
+  line-height: 1.75em;
 }
 
 .description {
   text-align: left;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: Gilroy-Medium;
-  line-height: 2em;
+  line-height: 1.75em;
 }
 
 .otherContainer {
@@ -876,4 +876,14 @@ span .active {
 .allowIt {
   background-color: #000000;
   color: #fff;
+}
+
+.listFlex {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  text-align: center;
+  font-size: 1.4em;
+  font-family: Gilroy-Medium;
+  line-height: 1.75em;
 }
