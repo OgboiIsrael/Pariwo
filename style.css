@@ -309,7 +309,8 @@ span .active {
 }
 
 .benefitSB {
-  padding: 5em 15em;
+  padding: 5em 10em;
+  padding-top: 10em;
   background-color: #fff;
   text-align: center;
   position: relative;
