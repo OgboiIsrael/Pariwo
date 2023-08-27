@@ -872,3 +872,8 @@ span .active {
 }
 
 /*End*/
+
+.allowIt {
+  background-color: #000000;
+  color: #fff;
+}
