@@ -409,6 +409,18 @@
   /*End*/
 }
 
+@media (max-width: 900px) {
+  .manImage {
+    display: none;
+  }
+  .manImaged {
+    display: block;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+  }
+}
+
 @media (max-width: 800px) {
   .benefits,
   .benefitSB {
