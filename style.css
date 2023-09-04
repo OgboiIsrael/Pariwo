@@ -316,8 +316,10 @@ span .active {
 }
 
 .imageback {
-  background-image: url(images/flafofnig.png);
-  background-size: cover;
+  background-color:#fff;
+  background-image: linear-gradient(90deg, #0c3e0a 50%, #fff 50%);
+  background-size: 67%;
+  background-repeat: repeat;
 }
 
 .imageFront {
@@ -524,7 +526,7 @@ span .active {
 
 .refs {
   display: flex;
-  justify-content: center;
+  gap: 1em;
   align-items: center;
   flex-direction: column;
 }
@@ -910,4 +912,5 @@ span .active {
   font-size: 1.4em;
   font-family: Gilroy-Medium;
   line-height: 1.75em;
+  color: #fe5d00;
 }

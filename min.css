@@ -1,22 +1,39 @@
+@media (max-width: 1500px) {
+  .imageOne img {  
+    width: 30em;
+    border-radius: 0.3em;
+    margin: 1em;
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     gap: 4em;
     padding: 2em 0em;
     background-color: transparent;
   }
+  .ftWordB,
+  .ctbdyInfo,
+  .listFlex,
+  .cSummary {
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
   .linked {
     font-size: 1.1em;
   }
   .miniPlaces {
-    height: 18em;
+    height: 17em;
+  }
+  .miniPlacesL {
+    height: 13em;
   }
   .seperate1 {
     flex-direction: column;
     gap: 2em;
   }
-
   .benefitSB {
-    padding: 5em 15em;
+    padding: 5em 10em;
   }
   .imageFront {
     padding: 6em 3em;
@@ -26,7 +43,7 @@
     gap: 2em;
   }
   .benefits {
-    padding: 8em 10em;
+    padding: 8em 6.25em;
     flex-direction: column-reverse;
   }
   .benefit {
@@ -54,11 +71,27 @@
   .uaButton {
     padding: 1em 2.5em;
   }
+  .stage {    
+    padding: 0em 6.25em;
+  }
+  .containerTop {
+    padding: 0em 6.25em;
+    padding-top: 8em;
+    padding-bottom: 2em;
+  }
+  .splitter,
+  .splitterX {
+    padding: 2em 0;
+  }
   .thirdSection {
-    padding: 8em 5em;
+    padding: 0;
+    padding-bottom: 8em;
+  }
+  .miniCT {
+    padding-bottom: 5em;
   }
   .midContainer {
-    gap: 4em;
+    gap: 0em;
   }
   .benefitA {
     padding: 0 6em;
@@ -74,7 +107,8 @@
     font-size: 2em;
   }
   .description {
-    line-height: 1.5em;
+    line-height: 1.4em;
+    text-align: justify;
   }
   .contactContainer {
     padding: 8em 5em;
@@ -110,7 +144,7 @@
     height: 15em;
   }
   .imageOne img {
-    width: 30em;
+    width: 25em;
   }
   .links {
     display: none;
@@ -283,6 +317,15 @@
     width: 100%;
   }
 
+  .benefitSB {
+    padding: 8em 6.25em;
+  }
+
+  .ctWord {
+    font-size: 2.2em;
+    line-height: 2.7em;
+  }
+
   .mContainer {
     display: flex;
     flex-direction: column;
@@ -310,14 +353,17 @@
     font-size: 2em;
   }
 
-  .ctbdyInfo {
-    font-size: 0.9em;
-  }
-
   .midContainer {
     flex-direction: column;
-    gap: 6em;
     padding-top: 0em;
+  }
+
+  .ctbdyInfo,
+  .listFlex,
+  .cSummary,
+  .ftWordB,
+  .description {
+    font-size: 1.1em;
   }
 
   /*End*/
@@ -364,15 +410,21 @@
 }
 
 @media (max-width: 800px) {
-  
   .benefits,
   .benefitSB {
     padding: 5em 6em;
   }
-  .imageback {
-    background-size: contain;
+  .miniContainer {
+    padding: 0em 6em;
   }
-  .splitter {
+  .stage {
+    padding: 0 2em;
+  }
+  .miniPlacesL {
+    display: none;
+  }
+  .splitter,
+  .splitterX {
     flex-direction: column;
   }
   .miniPlaces {
@@ -384,7 +436,7 @@
     align-items: center;
   }
   .imageOne img {
-    width: 28em;
+    width: 20em;
   }
   .imageFront {
     padding: 4em 2em;
@@ -427,8 +479,21 @@
     padding: 3em 3em;
     padding-bottom: 5em;
   }
+  .containerTop {
+    padding: 0 3em;
+    padding-top: 8em;
+    padding-bottom: 2em;
+  }
+  .miniCT {
+    padding-bottom: 3em;
+  }
+  .miniContainer {
+    padding: 0 3em;
+  }
   .imageOne img {
     width: 25em;
+    float: left;
+    margin: 1em;
   }
   .imageTwo img {
     width: 8em;
@@ -436,8 +501,15 @@
   .ctWord {
     font-size: 2em;
   }
+  .listFlex {
+    flex-direction: column;
+    gap: 0em;
+  }
   .bdyInfo,
-  .cSummary {
+  .cSummary,
+  .description,
+  .listFlex,
+  .ctbdyInfo {
     font-size: 1em;
   }
   .fourthSection {
@@ -595,8 +667,10 @@
   .keyData {
     padding: 4em 3em;
   }
-  .splitter {
-    width: 25em;
+  .containerTop {
+    padding: 0 3em;
+    padding-top: 7em;
+    padding-bottom: 2em;
   }
   .impSummary {
     gap: 3em;
@@ -644,20 +718,14 @@
   .bdyHead {
     font-size: 1.5em;
   }
-  .thirdSection {
-    padding: 9em 4em;
-    gap: 6em;
-  }
   .miniContainer {
     border: rgba(242, 242, 242, 0.536);
   }
   .description,
   .listNum,
+  .listFlex,
   .ctbdyInfo {
     font-size: 0.9em;
-  }
-  .midContainer {
-    gap: 5em;
   }
   .splitter {
     flex-direction: column;
@@ -772,9 +840,6 @@
     padding: 0 3em;
     padding-bottom: 3em;
   }
-  .thirdSection {
-    padding: 4em 3em;
-  }
   .mainHeader {
     font-size: 1.2em;
   }
@@ -809,9 +874,6 @@
     padding: 0 3em;
     padding-bottom: 3em;
   }
-  .thirdSection {
-    padding: 4em 3em;
-  }
   .mainHeader {
     font-size: 1.2em;
   }
@@ -825,10 +887,18 @@
   .miniPlaces {
     height: 14em;
   }
-  .splitter,
   .infoContact,
   .imageSafe img {
     width: 18em;
   }
+}
 
+@media (max-width: 280px) {
+  .imageSafe img,
+  .imageOne img {
+    width: 12em;
+  }
+  .infoContact {
+    width: 15em;
+  }
 }
