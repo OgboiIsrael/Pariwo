@@ -713,6 +713,7 @@
   .imageOne img {
     width: 18em;
     border-radius: 0.4em;
+    float: none;
   }
   .imageTwo img {
     border-top-left-radius: 0;
