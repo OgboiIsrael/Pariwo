@@ -277,6 +277,10 @@ span .active {
   gap: 3em;
 }
 
+.stage {
+  padding: 0em 6em;
+}
+
 .impStatement {
   display: flex;
   flex-direction: column;
@@ -317,7 +321,7 @@ span .active {
 
 .imageback {
   background-color:#fff;
-  background-image: linear-gradient(90deg, #0c3e0a 50%, #fff 50%);
+  background-image: linear-gradient(90deg, rgb(12, 102, 12) 50%, #fff 50%);
   background-size: 67%;
   background-repeat: repeat;
 }
@@ -912,5 +916,6 @@ span .active {
   font-size: 1.4em;
   font-family: Gilroy-Medium;
   line-height: 1.75em;
+  font-weight: 700;
   color: #fe5d00;
 }
