@@ -12,6 +12,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -24,7 +28,7 @@
                 <span><a href="#features" class="linked" onclick="toggle()">Solutions</a></span>
             </div>
             <div class="logo">
-                <img src="images/pariwoLogo.png" class="logoImage">
+                <img src="images/pariwo.jpg" class="logoImage">
             </div>
             <div class="links">
                 <span><a href="#features" class="linked" onclick="toggle()">Services <!--<img src="images/arrowdown.svg"/>--></a></span>
@@ -309,7 +313,7 @@
                         <a href="order.html" class="ucButton">Order Now</a>-->
                     </div>
                 </div>
-                <div class="miniContainer allowIt" style="background-color: #0b162b;">
+                <div class="miniContainer allowIt" style="background-color:#006eff;">
                     <div class="splitterX">
                         <div class="ref">
                             <div>
@@ -333,7 +337,7 @@
                                     This Anti-Rape  device; On activation releases a loud noise of 140db to prevent attack and attract attention for your rescue.<br>
                                     It helps vulnerable people including women walking alone, children, Elderly at risk of medical emergencies and people who work at night to attract attention and possible rescue.<br>
                                     The Pariwo Individual Safety Alarm provides individuals with the means to seek help swiftly.<br><br>
-                                    <span style="color: #fe5d00; font-weight: 700;">Features:</span>
+                                    <span style="color: #fff; font-weight: 550;">Features:</span>
                                     <ol>
                                         <li>Portable handheld device</li>
                                         <li>Easy activation by pulling handles.</li>
@@ -408,7 +412,7 @@
                         <a href="order.html" class="ucButton">Order Now</a>-->
                     </div>
                 </div>
-                <div class="miniContainer allowIt" style="background-color:  #0b162b;">
+                <div class="miniContainer allowIt" style="background-color:#006eff;;">
                     <div class="splitterX">
                         <div class="ref">
                             <div>
@@ -435,7 +439,7 @@
                                     The compact, mobile and easily hidden video recording alarm system is small amd flexible enough to be installed anywhere in your home.<br>
                                     A user friendly mobile application allows you to receive alerts on detection of humanoids, voices or sound, with live video feed available at all times for easy viewing.<br>
                                     The PariwoCam also allows you to talk to perpetrators in your home and remotely activate a siren that will help scare off unwanted persons in your home.<br><br>
-                                    <span style="color: #fe5d00; font-weight: 700;">Features:</span>
+                                    <span style="color: #fff; font-weight: 550;">Features:</span>
                                     <ol>
                                         <li>Sound and motion detection.</li>
                                         <li>2-way Audio.</li>
@@ -521,7 +525,7 @@
                         </div>
                         <p class="description">
                             Send us your questions and requests by email and we will reply as soon as possible:<br>
-                            <a href="mailto:info@pariwo.ng" style="  color: #fe5d00;font-weight: 600;">info@pariwo.ng</a>
+                            <a href="mailto:info@pariwo.net" style="  color: #fe5d00;font-weight: 600;">info@pariwo.net</a>
                         </p>
                     </div>
                 </div>
@@ -534,21 +538,21 @@
                         <form action="chat.php" method="post" enctype="multipart/form-data" class="formDes">
                             <input type="text" placeholder="Full-name *" name="sender_name" class="inputDes" required><br>
                             <input type="email" placeholder="E-mail Address *" name="sender_email" class="inputDes" required/><br>
-                            <input type="tel" id="phone" name="phone" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" placeholder="0800-000-0000" class="inputDes"><br>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" placeholder="Mobile Number" class="inputDes"><br>
                             <select name="purpose" id="purpose" class="optionsDes" required>
-                                <option value="">Please choose purpose</option>
+                                <option value="">Please choose purpose *</option>
                                 <option value="order">Order</option>
                                 <option value="enquiry">Enquiry</option>
                                 <option value="complaints">Complaints</option>
                                 <option value="others">Others</option>
                             </select><br>
                             <select name="products" id="products" class="optionsDes" required>
-                                <option value="">Please choose product</option>
-                                <option value="">MAIGAARD Community Safety Alarm System</option>
+                                <option value="">Please choose product *</option>
+                                <option value="">MaiGAD Community Safety Alarm System</option>
                                 <option value="">Pariwo Individual Safety Alarm</option>
                                 <option value="">Mini GPRS Personal Alarm System</option>
-                                <option value="">SaferCity App</option>
-                                <option value="none">PariwoCam</option>
+                                <option value="">PariwoCam</option>
+                                <option value="">Safety Panic Application: SaferCity App</option>
                                 <option value="none">None</option>
                             </select><br>
                             <textarea placeholder="Additional information *" name="message" class="messageDes" required/></textarea><br>
@@ -563,7 +567,7 @@
             <div class="footer">
                 <div class="ftLogo">        
                     <div class="logo">
-                        <img src="images/pariwoLogo.png" class="logoImage">
+                        <img src="images/pariwo.jpg" class="logoImage">
                     </div>
                     <div class="splinter">
                         <a href="#" class="changeColour"><ion-icon name="mail-outline"></ion-icon></a>
@@ -650,17 +654,13 @@
 
         <!--JavaScript-->
         
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
         <!--<script type="text/javascript">
             window.onbeforeunload = function () {
             window.scrollTo(0, 0);
             }
         </script>-->
 
-        <script type="text/javascript">
+        <!--<script type="text/javascript">
             window.addEventListener("scroll", function(){
                 var header = document.querySelector("header");
                 header.classList.toggle("sticky",window.scrollY > 100);
@@ -731,6 +731,6 @@
                 }
             }
             });
-        </script>
+        </script>-->
     </body>
 </html>
